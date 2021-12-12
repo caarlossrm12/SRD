@@ -1,0 +1,24 @@
+$ORIGIN .
+$TTL 604800	; 1 week
+carlosrm.edu		IN SOA	carlosrm-linux.carlosrm.edu. root.carlosrm.edu. (
+				27         ; serial
+				360000     ; refresh (4 days 4 hours)
+				3600       ; retry (1 hour)
+				3600000    ; expire (5 weeks 6 days 16 hours)
+				3600       ; minimum (1 hour)
+				)
+			NS	carlosrm-linux.carlosrm.edu.
+			NS	carlosrm-esclavolinux.carlosrm.edu.
+$ORIGIN carlosrm.edu.
+aliascarlosrm		CNAME	carlosrm-linux
+$TTL 300	; 5 minutes
+carlosrm-cliente	A	192.168.12.112
+			TXT	"3148e8714f1db663d390a46f1b1676d788"
+$TTL 604800	; 1 week
+carlosrm-esclavolinux	A	192.168.12.40
+carlosrm-linux		A	192.168.12.12
+$TTL 600	; 10 minutes
+ejemplo			A	192.168.12.50
+$TTL 604800	; 1 week
+otro			A	192.168.12.20
+PC-01			A	192.168.12.13

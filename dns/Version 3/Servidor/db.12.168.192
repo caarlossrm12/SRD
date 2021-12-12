@@ -1,0 +1,22 @@
+$ORIGIN .
+$TTL 604800	; 1 week
+12.168.192.in-addr.arpa	IN SOA	carlosrm-linux.carlosrm.edu. root.carlosrm.edu. (
+				23         ; serial
+				360000     ; refresh (4 days 4 hours)
+				3600       ; retry (1 hour)
+				3600000    ; expire (5 weeks 6 days 16 hours)
+				360000     ; minimum (4 days 4 hours)
+				)
+			NS	carlosrm-linux.carlosrm.edu.
+			NS	carlosrm-esclavolinux.carlosrm.edu.
+$ORIGIN 12.168.192.in-addr.arpa.
+$TTL 300	; 5 minutes
+112			PTR	carlosrm-cliente.carlosrm.edu.
+$TTL 604800	; 1 week
+12			PTR	aliascarlosrm.carlosrm.edu.
+			PTR	carlosrm-linux.carlosrm.edu.
+13			PTR	PC-01.carlosrm.edu.
+20			PTR	otro.carlosrm.edu.
+30			PTR	carlosrm-esclavolinux.carlosrm.edu.
+$TTL 6600	; 1 hour 50 minutes
+50			PTR	ejemplo.carlosrm.edu.
